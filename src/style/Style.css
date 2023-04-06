@@ -175,5 +175,11 @@ footer .imgperfil{
   width: 35px;
   height: 35px;
 }
-/*===========================================  */
-
+/*=============MODO OSCURO===============  */
+.dark{
+    background-color: #12121296;
+    color: white;
+  }
+  .dark > a {
+    color: white;
+  }
