@@ -5,7 +5,7 @@ const CardFrom = () => {
 
   return (
     <div>
-        <h1>CardFrom </h1>   
+      <h1>CardFrom </h1>
     </div>
   )
 }

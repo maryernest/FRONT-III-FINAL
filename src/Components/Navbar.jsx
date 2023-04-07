@@ -10,41 +10,41 @@ import { ModoDarkContext } from '../context/ModoDarkContext';
 
 const Navbar = () => {
 
-    const { isModoOscuro, setIsModoOscuro } = useContext (ModoDarkContext);
+  const { isModoOscuro, setIsModoOscuro } = useContext(ModoDarkContext);
 
-    
-    const handleModoDark = () => {
-        if (isModoOscuro) {
-            setIsModoOscuro(false)
-        }else{
-            setIsModoOscuro(true)
-        }
+
+  const handleModoDark = () => {
+    if (isModoOscuro) {
+      setIsModoOscuro(false)
+    } else {
+      setIsModoOscuro(true)
     }
-       
-
-    return (
-        
-        <nav className={ isModoOscuro? "dark" : "app"}>
-            {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
-            {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
+  }
 
 
-            <div className='logo'>
-                <img src='./images/logo.png' />
-                <h2>ODONTO</h2>
-            </div>
+  return (
 
-            <div className='navegar'>
-                <Link to="/">Home</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/favs">Favs</Link>
+    <nav className={isModoOscuro ? "dark" : "app"}>
+      {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
+      {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
 
-                <button onClick={handleModoDark}>
-                    <Brightness4Icon className="imgperfil" alt="logo Faceboock"  />
-                </button>
-            </div>
-        </nav>
-    )
+
+      <div className='logo'>
+        <img src='./images/logo.png' />
+        <h2>ODONTO</h2>
+      </div>
+
+      <div className='navegar'>
+        <Link to="/home">Home</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/favs">Favs</Link>
+
+        <button onClick={handleModoDark}>
+          <Brightness4Icon className="imgperfil" alt="logo Faceboock" />
+        </button>
+      </div>
+    </nav>
+  )
 }
 export default Navbar
 

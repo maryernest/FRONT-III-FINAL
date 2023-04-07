@@ -8,21 +8,21 @@ import { ModoDarkContext } from '../context/ModoDarkContext';
 
 const Footer = () => {
 
-    const { isModoOscuro } = useContext (ModoDarkContext);
+  const { isModoOscuro } = useContext(ModoDarkContext);
 
-    return (
-        <footer className={ isModoOscuro? "dark" : "app"}>
-            <img src="./images/DH.png" alt='DH-logo'/>
+  return (
+    <footer className={isModoOscuro ? "dark" : "app"}>
+      <img src="./images/DH.png" alt='DH-logo' />
 
-            <div>
-                <FacebookIcon className="imgperfil" alt="logo Faceboock" sx={{color: "white" }}  />
-                <InstagramIcon className="imgperfil" alt="logo Instagram" sx={{color: "white" }} />
-                <LinkedInIcon className="imgperfil" alt="linkedln" sx={{color: "white" }}/>
-                <WhatsAppIcon className="imgperfil" alt="logo WhatsApp" sx={{color: "white" }} />
-            </div>
+      <div>
+        <FacebookIcon className="imgperfil" alt="logo Faceboock" sx={{ color: "white" }} />
+        <InstagramIcon className="imgperfil" alt="logo Instagram" sx={{ color: "white" }} />
+        <LinkedInIcon className="imgperfil" alt="linkedln" sx={{ color: "white" }} />
+        <WhatsAppIcon className="imgperfil" alt="logo WhatsApp" sx={{ color: "white" }} />
+      </div>
 
-        </footer>
-    )
+    </footer>
+  )
 }
 
 export default Footer

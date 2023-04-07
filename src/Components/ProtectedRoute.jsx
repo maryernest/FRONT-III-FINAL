@@ -1,16 +1,15 @@
-// import { Navigate, Outlet } from 'react-router-dom';
-// import { useContext } from 'react'
-// import { NewContext } from '../Context/Context'
+import React, { useContext } from 'react'
+import { AuthContext } from '../context/AuthContext';
+import { Navigate, Outlet } from 'react-router-dom'
 
 
-// export const ProtectedRoute = () => {
-    
-//     const { isLogged } = useContext(NewContext);
-//     console.log(isLogged);
+export const ProtectedRoute = () => {
+  const { isLogged } = useContext(AuthContext);
 
-//     return isLogged ? <Outlet /> : <Navigate to='/login' />;
+  return (
+    isLogged ? <Outlet /> : <Navigate to='/login' />
+  
+  ); 
+};
 
-// };
-
-
-
+export default ProtectedRoute 
