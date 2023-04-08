@@ -25,16 +25,15 @@ const Navbar = () => {
   return (
 
     <nav className={isModoOscuro ? "dark" : "app"}>
+      {/* <div className='navi'> */}
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-
-
       <div className='logo'>
         <img src='./images/logo.png' />
         <h2>ODONTO</h2>
       </div>
 
-      <div className='navegar'>
+      <div className='navi'>
         <Link to="/home">Home</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/favs">Favs</Link>

@@ -24,7 +24,8 @@ const Home = () => {
   return (
     <main className="">
     <h1>Home</h1>
-    <div className="card-grid">
+
+    <section className="card-grid">
       {details.length
         ? details.map((detail) =>
           <
@@ -34,7 +35,7 @@ const Home = () => {
             id={detail.id}
           />)
         : null}
-    </div>
+    </section>
 
     </main>
   )

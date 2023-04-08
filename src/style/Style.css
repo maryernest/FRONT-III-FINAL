@@ -15,9 +15,10 @@ h1{
 nav {
     background-color: rgb(75, 140, 197);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 800px;
+    padding: 1rem;
 }
 nav .logo {
     display: flex;
@@ -31,7 +32,7 @@ nav h2 {
 nav img {
     width: 70px;
 }
-nav .navegar {
+nav .navi {
     display: flex;
     gap: 30px;
 }
@@ -52,15 +53,12 @@ nav button {
 
 
 /*================CARD====================  */
-.card  img {
-    border-radius: 50%;
-    width:100%
-}
 .card{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     box-shadow: 5px 5px 7px 5px ;
     border: 0.5px solid #ffffff;
     border-radius: 20px;
@@ -70,8 +68,11 @@ nav button {
 } 
 .card:hover{
     border: 3px solid rgb(46, 115, 219);
-
-  }
+}
+.card img {
+    border-radius: 50%;
+    width:100%
+}
 .card-grid{
     display: flex;
     justify-content: space-evenly;
@@ -80,16 +81,16 @@ nav button {
     margin: 0 auto;
     width: 90vw;
     height: auto;
-  }
+}
 .card .favButton{
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 50%;
     border: none;
-    box-shadow: -0.5px 1px 2px 1px;
+    /* box-shadow: -0.5px 1px 2px 1px; */
     cursor: pointer;
     position: absolute;
-    top: 11px;
-    right: 12px;
+    top: 5px;
+    right: 5px;
     width: 1.8vw;
     height: 3.9vh;
 }
@@ -97,6 +98,41 @@ nav button {
     margin-top: 1.8px;
     color:rgb(158, 13, 13)
 }
+
+
+
+/*================FAVS====================  */
+.card-favs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    height: 100vh;
+}
+
+.card-favs > div {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 7px 5px ;
+    border: 0.5px solid #ffffff;
+    border-radius: 20px;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin: 10px;
+    width: 20vw;
+    height: 40vh;
+    
+}
+
+.card-favs > div:hover{
+    border: 3px solid rgb(46, 115, 219);
+}
+.card-favs div > img{
+    width: 90%;
+}
+
+
 
 
 /*===============CONTACT===================  */
@@ -139,17 +175,11 @@ form > button{
 }
 
 
-/*================FAVS====================  */
-.card-grid {
-    height: 100vh;
-}
-
-
 /*================FOOTHER=================  */
 footer {
     display: flex;
-    justify-content: space-around;
-    gap: 800px;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 2rem;
    
@@ -196,16 +226,25 @@ footer .imgperfil{
 
 /*===============DETAIL==================  */
 
+.section{
+
+    height: 100vh;
+}
 .titulo{
     display: flex;
     justify-content: space-around;
     border: 3px solid;
+    gap: 110px;
 
 
 }
 .decrip{
     display: flex;
-    gap: 70px;
     flex-direction: row;
-    /* border: 1px solid; */
+    justify-content: space-around;
+    border: 1px solid;
 }
+
+/*=====================================  */
+
+
