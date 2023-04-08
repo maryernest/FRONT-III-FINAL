@@ -11,6 +11,7 @@ import Footer from './Components/Footer'
 
 
 
+
 const App = () => {
   const { isModoOscuro } = useContext(ModoDarkContext);
 
@@ -18,28 +19,30 @@ const App = () => {
     <Suspense fallback={<h1>Cargando tu página</h1>}>
       <AuthContextProvider>
         <BrowserRouter>
-          <div className={isModoOscuro ? "dark" : "app"}>
-            <Routes>
-              <Route path='*' element={<Error />} />
+         
+            <div className={isModoOscuro ? "dark" : "app"}>
+              <Routes>
+                <Route path='*' element={<Error />} />
 
-              <Route path='/login' element={<Login />} />
-              <Route element={<ProtectedRoute />}>
-                {
-                  rutas.map(({ id, path, Component }) => (
-                    <Route key={id} path={path} element=
-                      {
-                        <>
-                          <Navbar />
-                          <Component />
-                          <Footer />
-                        </>
-                      } />
-                  ))}
+                <Route path='/login' element={<Login />} />
+                <Route element={<ProtectedRoute />}>
+                  {
+                    rutas.map(({ id, path, Component }) => (
+                      <Route key={id} path={path} element=
+                        {
+                          <>
+                            <Navbar />
+                            <Component />
+                            <Footer />
+                          </>
+                        } />
+                    ))}
 
-              </Route>
-              <Route path='/' element={<Navigate to='/login' />} />
-            </Routes>
-          </div>
+                </Route>
+                <Route path='/' element={<Navigate to='/login' />} />
+              </Routes>
+            </div>
+         
         </BrowserRouter>
       </AuthContextProvider>
     </Suspense>

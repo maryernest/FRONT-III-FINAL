@@ -34,39 +34,30 @@ const Login = () => {
     
   return (
     
-    <Box component='form'
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "15px",
-        width: "20vw"
-      }}
-      onSubmit={ handleSubmit }
-    >
-        
-      <TextField
-        name='email'
-        size='small'
-        type='email'
-        label='Email *'
-        placeholder='Ingrese su Correo'
-        value={values.email}
-        onChange={(e) => setValues({...values, email: e.target.value })}
-      />  
-      <TextField 
-        name='password'
-        size='small'
-        type='password'
-        label='Password *'
-        placeholder='Ingrese su Contraseña'
-        value={values.password}
-        onChange={(e) => setValues({...values, password: e.target.value })}
-      />  
-
+    <Box component='form' className='formi'onSubmit={ handleSubmit }>
+         
+        <TextField
+          name='email'
+          size='small'
+          type='email'
+          label='Email *'
+          placeholder='Ingrese su Correo'
+          value={values.email}
+          onChange={(e) => setValues({...values, email: e.target.value })}
+        />  
+        <TextField 
+          name='password'
+          size='small'
+          type='password'
+          label='Password *'
+          placeholder='Ingrese su Contraseña'
+          value={values.password}
+          onChange={(e) => setValues({...values, password: e.target.value })}
+        />  
       <Button type='submit' size='small' variant='contained' from= "form">
-        Enviar
+        Submit
       </Button>
-  
+      
     </Box>
   )
 }

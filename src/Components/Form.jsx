@@ -14,14 +14,14 @@ const Form = () => {
     const hadleSubmit = (e) => {
 
         e.preventDefaul();
-        
-        if (values.nombre.trim().length < 5 || values.email.length >= 6 ) {
-            setCartel(true);
-            setValidar(false);
-        } else {
-            setValidar(true);
-            setCartel(false);
-        }
+        console.log("hola");
+        // if (values.nombre.trim().length < 5 || values.email.length >= 6 ) {
+        //     setCartel(true);
+        //     setValidar(false);
+        // } else {
+        //     setValidar(true);
+        //     setCartel(false);
+        // }
 
     }
 
@@ -34,7 +34,7 @@ const Form = () => {
                     name="nombre" 
                     value={values.nombre}
                     placeholder="Nombre Completo" 
-                    onChange={(e) => setValues({...validar, nombre: e.target.value})}
+                    onChange={(e) => setValues({...values, nombre: e.target.value})}
                    
                 />
                 <input 
@@ -42,13 +42,13 @@ const Form = () => {
                     name="email"
                     value={values.email} 
                     placeholder="Correo" 
-                    onChange={(e) => setValues({...validar, email: e.target.value})}
+                    onChange={(e) => setValues({...values, email: e.target.value})}
                   
                 />
                  
 
                 <button form="formi" btn="submit">Enviar</button>
-                <span textoValidacion> </span>
+               
             </form>
 
                 {validar 
@@ -61,7 +61,7 @@ const Form = () => {
 
                 {cartel 
                     && (
-                        <CardFrom name={values.nombre} mail={values.email} />
+                       <p>pepe</p>
                     )
                 }
             

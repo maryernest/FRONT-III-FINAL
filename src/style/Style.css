@@ -52,7 +52,7 @@ nav button {
 
 
 /*================CARD====================  */
-.card img {
+.card  img {
     border-radius: 50%;
     width:100%
 }
@@ -175,7 +175,9 @@ footer .imgperfil{
   width: 35px;
   height: 35px;
 }
-/*=============MODO OSCURO===============  */
+
+
+/*=============MODO DRAK===============  */
 .dark{
     background-color: #12121296;
     color: white;
@@ -183,3 +185,27 @@ footer .imgperfil{
   .dark > a {
     color: white;
   }
+
+
+/*===============LOGIN==================  */
+.formi, .decrip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*===============DETAIL==================  */
+
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid;
+
+
+}
+.decrip{
+    display: flex;
+    gap: 70px;
+    flex-direction: row;
+    /* border: 1px solid; */
+}
