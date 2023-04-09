@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Error = () => {
   return (
-    <div>
+    <div className='err'>
       <h1>Esa ruta no existe</h1>
       <button>
         <Link to='/'>Volver</Link>

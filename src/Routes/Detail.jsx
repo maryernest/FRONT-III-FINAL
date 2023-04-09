@@ -23,25 +23,25 @@ const Detail = () => {
   }, []);
 
   return (
-    <section>
-      <h1>Detail Dentist id </h1>
+    <section className='container'>
+      <h1 className='detail'>Detail Dentist id </h1>
 
-      <div className='titulo'>
-        <h4>Id</h4>
-        <h4>Name</h4>
-        <h4>User</h4>
-        <h4>Email</h4>
-        <h4>Phone</h4>
-        <h4>Website</h4>
-      </div>
-      <div className='decrip'>
-        <p>{details?.id}</p>
-        <p>{details?.name}</p>
-        <p>{details?.username}</p>
-        <p>{details?.email}</p>
-        <p>{details?.phone}</p>
-        <p>{details?.website}</p>
-      </div>
+     
+        <h4 className='a'>Id</h4>
+        <h4 className='b'>Name</h4>
+        <h4 className='c'>User</h4>
+        <h4 className='d'>Email</h4>
+        <h4 className='e'>Phone</h4>
+        <h4 className='f' >Website</h4>
+     
+   
+        <p className='p1'>{details?.id}</p>
+        <p className='p2'>{details?.name}</p>
+        <p className='p3'>{details?.username}</p>
+        <p className='p4'>{details?.email}</p>
+        <p className='p5'>{details?.phone}</p>
+        <p className='p6'>{details?.website}</p>
+     
       <Button>
         <Link to='/home'>Volver</Link>
       </Button>

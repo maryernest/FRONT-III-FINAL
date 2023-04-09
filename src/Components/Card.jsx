@@ -1,10 +1,10 @@
 import React, { useContext } from "react"
-import { useParams, Link } from "react-router-dom";
-import "../style/Style.css"
+import { Link } from "react-router-dom";
+import { FavsContext } from "../context/FavsContext";
 import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { FavsContext } from "../context/FavsContext";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import "../style/Style.css"
 
 
 const Card = ({ name, username, id }) => {

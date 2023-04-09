@@ -1,151 +1,143 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-h1{
-    text-align: center;
-    margin: 20px;
-  }
-
+h1 {
+  text-align: center;
+  margin: 20px;
+}
 
 /*================NAVBAR====================  */
 nav {
-    background-color: rgb(75, 140, 197);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 1rem;
+  background-color: #4b8cc5;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
 }
-nav .logo {
-    display: flex;
-    align-items: center;
-    width: 50px;
+nav > .logo {
+  display: flex;
+  align-items: center;
+  width: 50px;
 }
 
 nav h2 {
-    color: #fff;
+  color: #fff;
 }
 nav img {
-    width: 70px;
+  width: 70px;
 }
-nav .navi {
-    display: flex;
-    gap: 30px;
+nav > .navi {
+  display: flex;
+  gap: 30px;
 }
 a {
-    color: #fff;
-    text-decoration: none;
-    margin: 5px;
-    cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
 }
 a:hover {
-    color: rgb(8, 7, 7);
+  color: #080707;
 }
 nav button {
-    border-radius: 8px;
-    border-style: none;
-    padding: 2px;
+  border-radius: 8px;
+  border-style: none;
+  padding: 2px;
 }
-
 
 /*================CARD====================  */
-.card{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 5px 5px 7px 5px ;
-    border: 0.5px solid #ffffff;
-    border-radius: 20px;
-    padding: 0.5rem 0.5rem 0 0.5rem;
-    position: relative;
-    width: 200px;
-} 
-.card:hover{
-    border: 3px solid rgb(46, 115, 219);
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 7px 5px;
+  border: 0.5px solid #ffffff;
+  border-radius: 20px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  position: relative;
+  width: 200px;
 }
-.card img {
-    border-radius: 50%;
-    width:100%
+.card:hover {
+  border: 3px solid #2e73db;
 }
-.card-grid{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 90vw;
-    height: auto;
+.card > img {
+  border-radius: 50%;
+  width: 100%;
 }
-.card .favButton{
-    background-color: #ffffff;
-    border-radius: 50%;
-    border: none;
-    /* box-shadow: -0.5px 1px 2px 1px; */
-    cursor: pointer;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 1.8vw;
-    height: 3.9vh;
+.card-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90vw;
+  height: auto;
 }
-.card .imgperfil{
-    margin-top: 1.8px;
-    color:rgb(158, 13, 13)
+.card .favButton {
+  background-color: none;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 1.8vw;
+  height: 3.9vh;
 }
-
-
+.card .imgperfil {
+  margin-top: 1.8px;
+  color: #9e0d0d;
+}
 
 /*================FAVS====================  */
 .card-favs {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
-    height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  height: 100vh;
 }
 
 .card-favs > div {
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 5px 5px 7px 5px ;
-    border: 0.5px solid #ffffff;
-    border-radius: 20px;
-    padding: 0.5rem 0.5rem 0 0.5rem;
-    margin: 10px;
-    width: 20vw;
-    height: 40vh;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 7px 5px;
+  border: 0.5px solid #ffffff;
+  border-radius: 20px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  margin: 10px;
+  width: 20vw;
+  height: 40vh;
 }
 
-.card-favs > div:hover{
-    border: 3px solid rgb(46, 115, 219);
+.card-favs > div:hover {
+  border: 3px solid #2e73db;
 }
-.card-favs div > img{
-    width: 90%;
+.card-favs div > img {
+  width: 90%;
 }
-
-
-
 
 /*===============CONTACT===================  */
-.contact{
-    text-align: center;
-    margin-top: 20px;
+.contact {
+  text-align: center;
+  margin-top: 20px;
 }
 .contact img {
-    height: 50vh;
-    width: 40vw;
+  border-radius: 30px;
+  height: 50vh;
+  width: 40vw;
 }
 
 /*================FORM====================  */
+
 form{
     display: flex;
     flex-direction: column;
@@ -174,77 +166,103 @@ form > button{
     width: 7vw;
 }
 
-
 /*================FOOTHER=================  */
 footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 2rem;
-   
-    background-color: rgb(11, 96, 161);
-    width: 100%;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+
+  background-color: #0b60a1;
+  width: 100%;
+  margin-top: 2rem;
 }
-footer > img{
-    background-color: #fff;
-    border-radius: 10px;
-    width: 10%;
+footer > img {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 10%;
 }
-footer > p{
-    margin: 0;
-    padding-top: 0.7rem;
+footer > p {
+  margin: 0;
+  padding-top: 0.7rem;
 }
 
-footer > div{
+footer > div {
   display: flex;
   gap: 10px;
 }
-footer .imgperfil{
+footer .imgperfil {
   width: 35px;
   height: 35px;
 }
 
-
 /*=============MODO DRAK===============  */
-.dark{
-    background-color: #12121296;
-    color: white;
-  }
-  .dark > a {
-    color: white;
-  }
-
+.dark {
+  background-color: #12121296;
+  color: white;
+}
+.dark > a {
+  color: white;
+}
 
 /*===============LOGIN==================  */
-.formi, .decrip{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.formi,
+.decrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*===============DETAIL==================  */
 
-.section{
-
-    height: 100vh;
+.container {
+  display: grid;
+  grid-template-columns: 0.4fr 1.5fr 1fr 1.7fr 1.5fr 0.8fr;
+  grid-template-rows: 0.2fr 0.07fr 0.07fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "detail detail detail detail detail detail"
+    "a b c d e f"
+    "p1 p2 p3 p4 p5 p6";
+  margin: 20px 20px 10px 40px;
+  height: 100vh;
 }
-.titulo{
-    display: flex;
-    justify-content: space-around;
-    border: 3px solid;
-    gap: 110px;
+  .detail { grid-area: detail; font-size: 30px; }
+  .a { grid-area: a; border: 1px solid #125e82; text-align: center; padding-top: 10px; background-color:  #1f79c8;; color: #fff;}
+  .b { grid-area: b; border: 1px solid #125e82; text-align: center; padding-top: 10px; background-color:  #1f79c8;; color: #fff;}
+  .c { grid-area: c; border: 1px solid #125e82; text-align: center; padding-top: 10px; background-color:  #1f79c8;; color: #fff;}
+  .d { grid-area: d; border: 1px solid #125e82; text-align: center; padding-top: 10px; background-color:  #1f79c8;; color: #fff;}
+  .e { grid-area: e; border: 1px solid #125e82; text-align: center; padding-top: 10px; background-color:  #1f79c8;; color: #fff;}
+  .f { grid-area: f; border: 1px solid #125e82; text-align: center; padding-top: 10px; background-color:  #1f79c8;; color: #fff;}
+  .p1 { grid-area: p1; border: 1px solid #125e82; text-align: center; padding-top: 10px; font-weight: bold;}
+  .p2 { grid-area: p2; border: 1px solid #125e82; text-align: center; padding-top: 10px; font-weight: bold}
+  .p3 { grid-area: p3; border: 1px solid #125e82; text-align: center; padding-top: 10px; font-weight: bold}
+  .p4 { grid-area: p4; border: 1px solid #125e82; text-align: center; padding-top: 10px; font-weight: bold}
+  .p5 { grid-area: p5; border: 1px solid #125e82; text-align: center; padding-top: 10px; font-weight: bold}
+  .p6 { grid-area: p6; border: 1px solid #125e82; text-align: center; padding-top: 10px; font-weight: bold}
 
-
+/*================ERROR=====================  */
+.err {
+  display: flex;
+  justify-content: center;
 }
-.decrip{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border: 1px solid;
+.err > h1 {
+  background-color: #ff0073;
+  color: #fff;
+  padding: 30px;
+  border-radius: 30px;
 }
-
-/*=====================================  */
-
-
+.err > button {
+  position: absolute;
+  top: 20%;
+  background-color: #0b60a1;
+  border-radius: 10px;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 5vh;
+  width: 7vw;
+}
