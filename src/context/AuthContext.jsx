@@ -4,20 +4,16 @@ import React, { createContext, useState } from 'react'
 export const AuthContext = createContext({});
 
 const AuthContextProvider = ({ children }) => {
-  const [ isLogged, setIsLogged ] = useState(false);
+  const [ isLogged, setIsLogged ] = useState(localStorage.getItem("auth")? true : false);
 
   const handleLogin = () => {
-    // return { 
       setIsLogged(true);
-      // use: "chinitamary9@hotmail.com",
-      // token: "AAAMJFK544541146565JH1231" 
-    // }
+      localStorage.setItem("auth", true);
   };
 
   const State = {
     isLogged,
     handleLogin,
-    // setIsLogged
   };
 
 

@@ -1,16 +1,20 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "../style/Style.css"
 
 
 const Form = () => {
 
   const [values, setValues] = useState("");
+  const [nombre, setNombre] =useState("");
+  const [email, setEmail] =useState("");
+
 
   const formi = (e) => {
 
     e.preventDefault();
-    const nombre = e.target[0].value;
-    const email = e.target[1].value;
+    // const nombre = e.target[0].value;
+    // const email = e.target[1].value;
+
     console.log(nombre, email);
 
     if (nombre.trim().length < 5 || !email.includes("@")) {
@@ -18,10 +22,14 @@ const Form = () => {
     } else {
       setValues(
         `Gracias ${nombre}, te contactaremos cuanto antes vía mail`
-      );
+          
+      )
+    
     }
   }
 
+
+ 
   return (
     <main>
       <form onSubmit={formi}>
@@ -29,11 +37,15 @@ const Form = () => {
           name="nombre"
           type="text"  
           placeholder="full name" 
+          values="nombre"
+          onChange={(e) => setNombre(e.target.value)}
         />
         <input 
           name="email" 
           type="email" 
-          placeholder="email" 
+          placeholder="email"
+          values="email" 
+          onChange={(e) => setEmail(e.target.value)}
         />
         <button type="submit">
           Send

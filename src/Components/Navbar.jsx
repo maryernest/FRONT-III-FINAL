@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link to="/favs">Favs</Link>
         
         <button onClick={handleModoDark}>
-          <Brightness4Icon className="imgperfil" alt="logo Faceboock" />
+          <Brightness4Icon className="imgperfil" alt="boton modo Dark" />
         </button>
       </div>
     </nav>

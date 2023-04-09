@@ -1,9 +1,9 @@
 import React, { useContext } from "react"
-import { Link } from "react-router-dom";
-import { FavsContext } from "../context/FavsContext";
-import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { Link } from "react-router-dom"
+import { FavsContext } from "../context/FavsContext"
+import LibraryAddIcon from '@mui/icons-material/LibraryAdd'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import "../style/Style.css"
 
 
@@ -12,11 +12,11 @@ const Card = ({ name, username, id }) => {
 
   const addFav = () => {
     dispatch({ type: 'AGREGAR', payload: { name, username, id } })
-  }
+  };
 
   const quitar = () => {
     dispatch({ type: 'QUITAR', payload: { name, username, id } })
-  }
+  };
 
 
   return (
