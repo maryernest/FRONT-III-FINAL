@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
 h1 {
   text-align: center;
@@ -99,7 +111,7 @@ nav button {
 .card-favs {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px;
+  margin: 40px;
   height: 100vh;
 }
 
@@ -112,10 +124,9 @@ nav button {
   box-shadow: 5px 5px 7px 5px;
   border: 0.5px solid #ffffff;
   border-radius: 20px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
   margin: 10px;
-  width: 20vw;
-  height: 40vh;
+  width: 16vw;
+  height: 50vh;
 }
 
 .card-favs > div:hover {
@@ -243,7 +254,20 @@ footer .imgperfil {
   .p5 { grid-area: p5; border: 1px solid #125e82; text-align: center; padding-top: 10px; font-weight: bold}
   .p6 { grid-area: p6; border: 1px solid #125e82; text-align: center; padding-top: 10px; font-weight: bold}
 
-/*================ERROR=====================  */
+.container button {
+  background-color: rgb(11, 96, 161);
+  border-radius: 10px;
+  border-style: none;   
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 5vh;
+  width: 7vw;
+}
+.container button:hover{
+  background-color: rgb(11, 96, 161);
+}
+  /*================ERROR=====================  */
 .err {
   display: flex;
   justify-content: center;

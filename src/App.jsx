@@ -3,11 +3,12 @@ import React, { Suspense, useContext } from 'react'
 import { ProtectedRoute } from './Components/ProtectedRoute'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { rutas, Login } from './navegation/Routes'
-import { ModoDarkContext } from './context/ModoDarkContext'
+import ModoDarkContextProvider, { ModoDarkContext } from './context/ModoDarkContext'
 import AuthContextProvider from './context/AuthContext'
 import Error from './error/Error'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
+import FavsContextProvider from './context/FavsContext'
 
 
 
@@ -18,12 +19,12 @@ const App = () => {
   return (
     <Suspense fallback={<h1>Cargando tu página</h1>}>
       <AuthContextProvider>
-        <BrowserRouter>
-         
+
+        <FavsContextProvider>
+          <BrowserRouter>
             <div className={isModoOscuro ? "dark" : "app"}>
               <Routes>
                 <Route path='*' element={<Error />} />
-
                 <Route path='/login' element={<Login />} />
                 <Route element={<ProtectedRoute />}>
                   {
@@ -35,15 +36,17 @@ const App = () => {
                             <Component />
                             <Footer />
                           </>
-                        } />
+                        }
+                      />
                     ))}
 
                 </Route>
                 <Route path='/' element={<Navigate to='/login' />} />
               </Routes>
             </div>
-         
-        </BrowserRouter>
+          </BrowserRouter>
+        </FavsContextProvider>
+
       </AuthContextProvider>
     </Suspense>
 

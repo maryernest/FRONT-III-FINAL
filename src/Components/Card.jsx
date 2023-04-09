@@ -27,16 +27,16 @@ const Card = ({ name, username, id }) => {
 
       {state.data.some((element) => element.id === id) ? (
         <Link onClick={quitar} className="favButton">
-          <FavoriteIcon className="imgperfil" alt="foto like" />
+          <FavoriteIcon className="imgperfil" alt="boton like" />
         </Link>
       ): (
         <Link onClick={addFav} className="favButton">
-          <FavoriteBorderIcon className="imgperfil" alt="foto like" />
+          <FavoriteBorderIcon className="imgperfil" alt="boton deslike" />
         </Link>
       )}
 
       <Link to={`/users/${id}`} >
-        <LibraryAddIcon className="imgperfil" alt="foto plus" />
+        <LibraryAddIcon className="imgperfil" alt="boton plus" />
       </Link>
 
     </div>

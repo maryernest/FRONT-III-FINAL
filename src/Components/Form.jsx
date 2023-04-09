@@ -24,7 +24,7 @@ const Form = () => {
 
   return (
     <main>
-      <form onSubmit={formi} className="container">
+      <form onSubmit={formi}>
         <input className="" 
           name="nombre"
           type="text"  

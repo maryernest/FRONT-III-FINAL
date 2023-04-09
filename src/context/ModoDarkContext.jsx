@@ -5,11 +5,11 @@ export const ModoDarkContext = createContext({});
 
 const ModoDarkContextProvider = ({ children }) => {
   const [isModoOscuro, setIsModoOscuro] = useState(false);
- 
+
   const state = {
-     isModoOscuro, 
-     setIsModoOscuro 
-    };
+    isModoOscuro,
+    setIsModoOscuro
+  };
 
   return (
     <ModoDarkContext.Provider value={state}>

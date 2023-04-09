@@ -1,8 +1,3 @@
-// import { lazy } from "react";
-// import Login from "../Routes/Login";
-// const DynamicImport = (param) => {
-//   return lazy(() => import(`../Routes/${param}.jsx`));
-// };
 import Login from "../Routes/Login";
 import Home from "../Routes/Home";
 import Contact from "../Routes/Contact";
@@ -33,24 +28,3 @@ export const rutas = [
 ];
 
 export {Login}
-
-
-// export const rutas = [
-//   {
-//     id: 1,
-//     path: "/",
-//     Component: DynamicImport("/Home"),
-//   },
-//   {
-//     id: 2,
-//     path: "/favs",
-//     Component: DynamicImport("/Favs"),
-//   },
-//   {
-//     id: 3,
-//     path: "/contact",
-//     Component: DynamicImport("/Contact"),
-//   },
-// ];
-
-// export {Login}
