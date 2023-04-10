@@ -25,7 +25,7 @@ const Login = () => {
             size='small'
             type='email'
             label='Email *'
-            placeholder='Ingrese su Correo'
+            placeholder='Email'
             value={values.email}
             onChange={(e) => setValues({...values, email: e.target.value })}
           />  
@@ -34,7 +34,7 @@ const Login = () => {
             size='small'
             type='password'
             label='Password *'
-            placeholder='Ingrese su Contraseña'
+            placeholder='assword'
             value={values.password}
             onChange={(e) => setValues({...values, password: e.target.value })}
           />  

@@ -36,7 +36,7 @@ const Card = ({ name, username, id }) => {
       )}
 
       <Link to={`/users/${id}`} >
-        <LibraryAddIcon className="imgperfil" alt="boton plus" />
+        <LibraryAddIcon className="imgperfil" alt="boton plus" style={{color: "rgb(46, 115, 220)"}} />
       </Link>
 
     

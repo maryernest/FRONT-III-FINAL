@@ -41,7 +41,7 @@ const Form = () => {
           values="email" 
           onChange={(e) => setEmail(e.target.value)}
         />
-        <button type="submit">Send</button>
+        <button type="enviar">Send</button>
 
         <div>
           {values}
