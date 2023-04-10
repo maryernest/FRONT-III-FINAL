@@ -3,12 +3,10 @@ import Card from '../Components/Card'
 import "../style/Style.css"
 export const endPoint = "https://jsonplaceholder.typicode.com/users";
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Home = () => {
 
   const [details, setDetails] = useState([]);
-  
 
   const getDetail = async () => {
     const res = await fetch(endPoint);

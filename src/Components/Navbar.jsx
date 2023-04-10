@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { ModoDarkContext } from '../context/ModoDarkContext';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
 import "../style/Style.css"
-
+import { ClassNames } from '@emotion/react';
+import InputIcon from '@mui/icons-material/Input';
 
 
 const Navbar = () => {
@@ -34,6 +35,10 @@ const Navbar = () => {
         <button onClick={handleModoDark}>
           <Brightness4Icon className="imgperfil" alt="boton modo Dark" />
         </button>
+       
+        <Link to={`/login`} >
+          <InputIcon className="imgvolver" alt="volver" />
+        </Link>
       </div>
     </nav>
   )

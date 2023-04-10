@@ -16,7 +16,6 @@ const Detail = () => {
     setDetails(data);
   };
 
-
   useEffect(() => {
     getDetail();
   }, []);

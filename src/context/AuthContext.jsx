@@ -1,14 +1,15 @@
 import React, { createContext, useState } from 'react'
+import { AuthContainer } from '../style/style';
 
 
 export const AuthContext = createContext({});
 
 const AuthContextProvider = ({ children }) => {
-  const [ isLogged, setIsLogged ] = useState(localStorage.getItem("auth")? true : false);
+  const [isLogged, setIsLogged] = useState(localStorage.getItem("auth") ? true : false);
 
   const handleLogin = () => {
-      setIsLogged(true);
-      localStorage.setItem("auth", true);
+    setIsLogged(true);
+    localStorage.setItem("auth", true);
   };
 
   const State = {
@@ -16,13 +17,13 @@ const AuthContextProvider = ({ children }) => {
     handleLogin,
   };
 
-
   return (
+   
     <AuthContext.Provider value={State}>
-      { children }
+      {children}
     </AuthContext.Provider>
+ 
   )
 }
-
 
 export default AuthContextProvider

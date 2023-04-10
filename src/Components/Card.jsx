@@ -39,6 +39,8 @@ const Card = ({ name, username, id }) => {
         <LibraryAddIcon className="imgperfil" alt="boton plus" />
       </Link>
 
+    
+
     </div>
   );
 };

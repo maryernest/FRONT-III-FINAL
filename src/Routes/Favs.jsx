@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { FavsContext } from "../context/FavsContext";
 
 
-
 const Favs = () => {
 
   const { state, dispatch } = useContext(FavsContext);
