@@ -143,16 +143,9 @@ h1 {
 }
 
 .miniformi Button {
-  background-color: #194c8b;
-  color: white;
-  margin-top: 130px;
-  margin-left: 4vw;
-  height: 40px;
-  border-radius: 20px;
-  position: absolute;
-  width: 10%;
-  box-shadow: 5px 10px 25px 0 ;
-  
+
+  box-shadow: 5px 10px 25px 0 ; 
+  border-radius: 50px;
 }
 
 
