@@ -16,7 +16,7 @@ const Favs = () => {
             <img src="./images/doctor.jpg"
               style={{
                 borderRadius: "50%", margin: "10px",
-              }} />
+            }} />
             <h5> {data.name}</h5>
             <p>{data.username}</p>
           </div>

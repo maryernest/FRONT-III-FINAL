@@ -27,7 +27,7 @@ const handleFavs = (state, action) => {
 
 const FavsContextProvider = ({ children }) => {
 
-  const initialState = { data: [] }
+  const initialState = { data: [] };
   const [state, dispatch] = useReducer(handleFavs, initialState)
 
   const State = {
