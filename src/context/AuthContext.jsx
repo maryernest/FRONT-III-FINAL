@@ -1,5 +1,4 @@
 import React, { createContext, useState } from 'react'
-import { AuthContainer } from '../style/style';
 
 
 export const AuthContext = createContext({});
